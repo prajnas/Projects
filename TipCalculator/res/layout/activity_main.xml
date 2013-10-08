@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/billamount"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+    
+    <Button
+        android:id="@+id/fifteenpercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tenpercent"
+        android:layout_alignBottom="@+id/tenpercent"
+        android:layout_centerHorizontal="true"
+        android:text="15%" />
+
+    <Button
+        android:id="@+id/twentypercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fifteenpercent"
+        android:layout_alignBottom="@+id/fifteenpercent"
+        android:layout_toRightOf="@+id/fifteenpercent"
+        android:text="20%" />
+
+    <Button
+        android:id="@+id/tenpercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="156dp"
+        android:layout_toLeftOf="@+id/fifteenpercent"
+        android:text="10%" />
+
+
+
+    <TextView
+        android:id="@+id/tipText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tenpercent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="104dp"
+        android:text="Tip is : " />
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tipText"
+        android:layout_alignBottom="@+id/tipText"
+        android:layout_alignLeft="@+id/fifteenpercent"
+        android:layout_marginLeft="26dp" />
+
+    <EditText
+        android:id="@+id/bill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:inputType="numberDecimal"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
